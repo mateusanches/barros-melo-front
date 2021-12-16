@@ -1,0 +1,204 @@
+#product-list .itens-product .header-list {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background: #e6e6e6;
+  padding: 20px 10px;
+  justify-content: space-around;
+}
+
+#product-list .itens-product .header-list .item-header {
+  display: block;
+  width: 200px;
+  font: normal 14px Poppins-Semibold;
+}
+
+#product-list .itens-product .header-list .spacing {
+  width: 100px;
+}
+
+#product-list .itens-product .header-list .name {
+  width: 320px;
+}
+
+@media (max-width: 1023px) {
+  #product-list .itens-product .header-list .created {
+    display: none;
+  }
+}
+
+#product-list .itens-product .MuiCircularProgress-colorPrimary {
+  margin: 50px auto;
+  display: block;
+}
+
+#product-list .itens-product .item-product {
+  border-bottom: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  padding: 15px 10px;
+  justify-content: space-around;
+  transition: all 0.3s;
+}
+
+#product-list .itens-product .item-product:hover {
+  background: #e6e6e6;
+}
+
+#product-list .itens-product .item-product p {
+  display: block;
+  width: 200px;
+  font: normal 14px Poppins-Regular;
+}
+
+@media (max-width: 1023px) {
+  #product-list .itens-product .item-product .item-created {
+    display: none;
+  }
+}
+
+#product-list .itens-product .item-product .itens-btn {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#product-list .itens-product .item-product .itens-btn .btn {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+#product-list .itens-product .item-product .itens-btn .btn:hover {
+  opacity: 0.8;
+}
+
+#product-list .itens-product .item-product .itens-btn .edit {
+  background: #3f8cff;
+}
+
+#product-list .itens-product .item-product .itens-btn .delete {
+  background: #940000;
+}
+
+#product-list .itens-product .item-product .item-name {
+  width: 320px;
+  font: normal 14px Poppins-Semibold;
+}
+
+#product-list .itens-product .item-product .status span {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  background: green;
+}
+
+#product-list .itens-product .item-product .false span {
+  background: #940000;
+}
+
+#product-list .modal-product {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#product-list .modal-product .content-modal {
+  display: block;
+  width: 800px;
+  height: 700px;
+  background: #fff;
+  border-radius: 15px;
+  top: 30vh;
+  z-index: 2;
+  padding: 20px;
+  max-height: 90vh;
+}
+
+@media(max-width: 1366px) {
+  #product-list .modal-product .content-modal {
+    overflow-y: scroll;
+  }
+}
+
+#product-list .modal-product .content-modal .box-close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#product-list .modal-product .content-modal .box-close .icon-close {
+  cursor: pointer;
+}
+
+#product-list .modal-product .content-modal .header-modal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  box-shadow: 1px 3px 3px -2px #eaeaea;
+}
+
+#product-list .modal-product .content-modal .header-modal .box-img {
+  display: block;
+  max-width: 150px;
+  width: 100%;
+}
+
+#product-list .modal-product .content-modal .header-modal .box-img img {
+  display: block;
+  width: 100%;
+}
+
+#product-list .modal-product .content-modal .header-modal .title-modal {
+  font: normal 22px SourceSansPro-Bold;
+  width: 100%;
+  display: block;
+  margin-left: 20px;
+  padding: 20px;
+  color: #000;
+  position: relative;
+}
+
+#product-list .modal-product .overlay-modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#product-list .active {
+  opacity: 1;
+  visibility: visible;
+}

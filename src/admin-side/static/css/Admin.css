@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Poppins-Regular;
+  font-style: normal;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  font-style: normal;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  font-style: normal;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins-Regular;
+}
+
+.modal-edit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-modal-edit {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 10%);
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #bfbfbf;
+  margin-bottom: 30px;
+}
+
+.content-modal-edit {
+  display: block;
+  width: 800px;
+  height: 100%;
+  background: #fff;
+  border-radius: 15px;
+  top: 30vh;
+  z-index: 2;
+  padding: 20px;
+  max-height: 90vh;
+  cursor: auto;
+}
+
+.loading-icon{
+  width: 20px!important;
+  height: 20px!important;
+  margin: 0 auto!important;
+  color: #FFF!important;
+}
+
+@media(max-width: 1366px) {
+  .content-modal-edit {
+    overflow-y: scroll;
+  }
+}

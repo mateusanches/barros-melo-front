@@ -1,0 +1,210 @@
+#content-login {
+  margin: 0;
+  padding: 0;
+  background: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+#content-login .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content-login .container .box-logo {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  border-right: 1px solid #fff;
+}
+#content-login .container .box-logo img {
+  width: 100%;
+}
+#content-login .container .box-login {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+#content-login .container .box-login .title-login {
+  font: normal 30px Poppins-Medium;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+#content-login .container .box-login .input-login {
+  width: 100%;
+  margin-bottom: 25px;
+}
+#content-login .container .box-login .MuiInput-underline:before {
+  border-bottom: 1px solid #fff;
+}
+#content-login .container .box-login .MuiInput-underline:after {
+  border-bottom: 1px solid #ba1818;
+}
+#content-login .container .box-login .MuiInput-input {
+  color: #fff!important;
+}
+#content-login .container .box-login .MuiInput-input::placeholder {
+  color: #fff;
+}
+#content-login .container .box-login .MuiFormLabel-root {
+  color: #fff;
+}
+#content-login .container .box-login .Mui-focused {
+  color: #ba1818;
+}
+#content-login .container .box-login .MuiIconButton-label {
+  color: #fff;
+}
+#content-login .container .box-login .btn-login {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 150px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+#content-login .container .box-login .btn-login:hover,
+#content-login .container .box-login .btn-login:focus {
+  background: #ba1818;
+  border: 1px solid #ba1818;
+}
+#content-login .container .box-login .btn-login .rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+@-moz-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 767px) {
+  #content-login .container {
+    flex-wrap: wrap;
+  }
+  #content-login .container .box-logo {
+    border-right: none;
+    padding: 0;
+    width: 100%;
+  }
+  #content-login .container .box-logo img {
+    width: 100px;
+  }
+}

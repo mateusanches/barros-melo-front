@@ -1,0 +1,175 @@
+#header {
+    display: block;
+    width: 100%;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.content-header, .content-header-mobile {
+    display: flex;
+    width: 100%;
+    padding: 15px 72px;
+    box-shadow: 0px 0px 5px 0px #ababab;
+    border-radius: 0px 0px 80px 0px;
+}
+
+.content-header-mobile {
+    display: none;
+}
+
+.box-logo {
+    display: block;
+    max-width: 70px;
+    width: 100%;
+}
+
+.box-logo img {
+    width: 100%;
+}
+
+.menu-header {
+    display: flex;
+    margin-left: 75px;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100% - 265px);
+}
+
+.item-menu {
+    list-style: none;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.item-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #42596b;
+    transition: all 0.3s;
+    padding: 5px 10px;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 2px;
+        margin: 0 auto;
+        background: #42596b;
+        transition: all 0.3s;
+        display: block;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.busca-header {
+    position: relative;
+
+    .search-icon {
+        position: absolute;
+        right: 0;
+        top: 45%;
+        transform: translateY(-50%);
+        color: #42596b;
+        cursor: pointer;
+    }
+}
+
+.campo-busca {
+    margin-right: 75px;
+}
+
+.campo-busca .MuiInput-underline {
+    &:after {
+        border-bottom: 2px solid #42596b;
+    }
+}
+
+.campo-busca .MuiInputLabel-formControl {
+    color: #42596b !important;
+}
+
+.blank-box {
+    width: 12px;
+}
+
+.menu-btn {
+    color: #42596b;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px #ababab;
+    border-radius: 0px 0px 80px 0px;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.header-menu {
+    position: relative;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .btn-close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #42596b;
+    }
+
+    .busca-header {
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 990px) {
+    .content-header {
+        display: none;
+    }
+
+    .content-header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .menu-header-mobile {
+        margin-top: 75px;
+    }
+
+    .box-logo {
+        max-width: 60px;
+    }
+
+    .item-menu a {
+        padding-left: 0;
+    }
+
+    .busca-header {
+        .search-icon {
+            top: 65%;
+        }
+    }
+}

@@ -1,0 +1,164 @@
+#content {
+  display: block;
+  margin-left: 259px;
+  padding: 50px;
+  height: 100vh;
+  background: #fff;
+  overflow-y: scroll;
+}
+#content .box-content {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px 0px #dcdcdc;
+  padding: 50px;
+}
+#content .box-content .title-content {
+  width: 100%;
+  font: normal 30px Poppins-Semibold;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+#content .box-content .box-form {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: auto;
+}
+#content .box-content .box-form .input-cadastro {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#content .box-content .box-form .input-cadastro .MuiInputBase-root {
+  width: 100%;
+}
+#content .box-content .box-form .input-cadastro:focus {
+  border: 2px solid #3f51b5;
+}
+#content .box-content .box-form .title {
+  color: rgba(0,0,0,0.54);
+}
+#content .box-content .box-form .form-edit {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ababab;
+  outline: 0;
+  font: normal 16px Poppins-Regular;
+}
+#content .box-content .box-form .form-edit:focus {
+  border-bottom: 2px solid #3f51b5;
+}
+#content .box-content .box-form label {
+  color: rgba(0,0,0,0.54);
+}
+#content .box-content .box-form label .input-area {
+  border: 1px solid rgba(0,0,0,0.42);
+  border-radius: 0;
+  outline: 0;
+  color: #000;
+  font-size: 16px;
+  padding: 5px;
+}
+#content .box-content .box-form .filter-select {
+  width: 100%;
+}
+#content .box-content .box-form .textarea-cadastro {
+  min-height: 100px;
+}
+#content .box-content .box-form .input-picture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  margin: 24px 0px;
+  color: #fff;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  word-wrap: break-word;
+}
+#content .box-content .box-form .input-picture p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#content .box-content .box-form .input-picture p .icon-img {
+  margin-right: 10px;
+}
+#content .box-content .box-form .input-picture .done {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: #006b00;
+  border-radius: 100%;
+}
+#content .box-content .box-form .input-picture input {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  display: block;
+  left: 0;
+}
+#content .box-content .box-form .input-picture:hover {
+  background: #008000;
+}
+#content .box-content .box-form .btn-cadastro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#content .box-content .box-form .btn-cadastro img {
+  height: 25px;
+}
+@media (max-width: 991px) {
+  #content {
+    padding: 0;
+  }
+}
+#content #pagination .content-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+#content #pagination .content-pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  list-style: none;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s;
+}
+#content #pagination .content-pagination li span {
+  font: normal 16px Poppins-Semibold;
+  color: #1a1a1a;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#content #pagination .content-pagination li:hover {
+  background: #ccc;
+}
+#content #pagination .content-pagination .active {
+  background: #1a1a1a;
+}
+#content #pagination .content-pagination .active span {
+  color: #fff;
+}
+#content #pagination .content-pagination .active:hover {
+  background: #1a1a1a;
+}
